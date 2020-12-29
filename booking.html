@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Booking</title>
+    </head>
+    <script>
+     function com(){
+        emp();
+        calc();
+     }
+      function emp(){
+        var d = document.forms["myform"]["i1"].value;
+        var e = document.forms["myform"]["i2"].value;
+        if (d == "" || e == "") {
+           alert("please fill in your details")
+        }
+      }
+      
+       
+       function calc(){
+        var a=document.getElementById("g1");
+        var b=document.getElementById("g2");
+        var c=document.getElementById("g3");
+        if(a.checked  && b.checked && c.checked)
+{
+   confirm("your total payable Amount is Rs.10500")
+}
+else if(a.checked  && b.checked )
+{
+   confirm("your total payable Amount is Rs.7000")
+}
+   else if(a.checked == true && c.checked == true)
+{
+    confirm("your total payable amount is Rs.6500")
+}
+else if(b.checked == true && c.checked == true)
+{
+    confirm("your total payable amount is Rs.7500")
+}
+
+else if(a.checked )
+{
+    confirm("your total payable amount is Rs.3000")
+}
+
+
+else if(b.checked == true)
+{
+    confirm("your total payable amount is Rs.4000")
+}
+
+
+else if(c.checked == true)
+{
+    confirm("your total payable amount is Rs.3500")
+}
+else{
+    confirm("please choose a ground")
+}
+}
+function cl(){
+    window.close();
+    window.open("turf1.html");
+}
+
+        </script>
+    <style>
+        body{
+            background-image: url("bg.jpeg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            
+        }
+        h1{
+            margin-top: 5%;
+            margin-left: 43%;
+            background-color: black;
+            color: green;
+            width: fit-content;
+            border-radius: 5%;
+            border: green;                
+        }
+        form{
+            text-align: center;
+            padding: 3%;
+            border: solid;
+            background-color: green;
+            font-weight: bold;
+            font-size: large;
+            border-radius: 20%;
+            width: 20%;
+
+            margin-left: 37%;
+        }
+        #pay{
+            background-color: black;
+        color: green;
+        border-radius: 10%;
+        
+        }
+        #pay:active{
+            transform: translateY(4px);
+        box-shadow: 0 5px greenyellow;
+        color:greenyellow
+        }
+        #close1{
+            background-color: black;
+        color: green;
+        border-radius: 10%;
+        
+        }
+        #close1:active{
+            transform: translateY(4px);
+        box-shadow: 0 5px greenyellow;
+        color:greenyellow
+        }
+    </style>
+    <body>
+        <h1>Book Tickets</h1>
+        <form name="myform">
+            <p>Email-id</p><input name="i1">
+            <p>Phone-no</p><input name="i2">
+            <p>Payment method</p>
+            <select>
+                <option value="credit">Credit card</option>
+                <option value="debit">Debit card</option>
+                <option value="upi">UPI</option>
+            </select>
+            <p>Choose your ground</p>
+        
+            <input type="checkbox" id="g1" value=3000 >Naidu's Turf<br>
+            <input type="checkbox" id="g2" value=4000> Neela's Turf<br>
+            <input type="checkbox" id="g3" value=3500>Martins Turf<br>
+            <br><br><br>
+            <button id="pay" onclick="com()" >Pay now</button>
+            <button id="close1" onclick="cl()">Back</button>
+        </form>
+    </body>
+</html>

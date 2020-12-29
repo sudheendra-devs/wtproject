@@ -1,0 +1,97 @@
+body{
+    background-image: url("bg.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    margin: 0%;
+    
+}
+
+h1{
+    background-color: black;
+    color: green;
+     
+    width:32%;
+    margin-left: 35%;
+    padding-left: 1%;
+    border-radius: 5px;
+}
+
+.nav1{
+   background-color: black;
+   color: coral;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    
+}
+.nav1 .active a{
+    background-color: greenyellow;
+    color: black;
+}
+li{
+    float: left;
+    padding: 1%;
+    margin-left: 9%;
+    font-size: larger;
+    
+}
+.nav1 li a{
+   text-decoration: none;
+    text-align: center;
+    color: green;
+    }
+
+  .nav1  li :hover{
+        background-color: green;
+                color: black;
+                
+        
+    }
+    .car{
+        border:green;
+        
+        width:80%;
+        margin-left: 10%;
+    }
+    .info{
+        border: solid;
+        background-color: green;
+        width: 80%;
+        text-align:center;        
+        font-weight: bold;
+        font-size: large;
+        margin-left: 10%;
+    }
+    .button1
+    {
+        margin-left:42%;
+
+    }
+    .b1{
+        background-color: black;
+        color: green;
+        border-radius: 10%;
+        box-shadow: 0 7px green;
+    
+    }
+    .b2{
+        background-color: black;
+        color: green;
+        border-radius: 15%;;
+        box-shadow: 0 7px green;
+
+    }
+    
+    .b1:active{
+        transform: translateY(4px);
+        box-shadow: 0 5px greenyellow;
+        color:greenyellow
+    }
+    .b2:active{
+        transform: translateY(4px);
+        box-shadow: 0 5px greenyellow;
+        color:greenyellow
+    }
